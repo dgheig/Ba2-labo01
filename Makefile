@@ -57,7 +57,7 @@ triangle.o: setup $(SRC)/triangle.h $(SRC)/triangle.cpp
 rectangle.o: setup $(SRC)/rectangle.h $(SRC)/rectangle.cpp
 	$(COMPILE) -c $(SRC)/rectangle.cpp -o $(OBJ)/rectangle.o
 
-labo01: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emmanuelle_gallay_david.cpp
+labo1: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emmanuelle_gallay_david.cpp
 	$(COMPILE) $(OBJECT) $(HEADERS) labo_01_comte_emmanuelle_gallay_david.cpp -o labo01
 
 # labo01: setup geometry.o labo01.o
