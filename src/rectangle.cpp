@@ -25,7 +25,7 @@ void Rectangle::setBase(double width) {
 }
 
 std::ostream& Rectangle::display(std::ostream& stream) const {
-    stream << "Width: " << mWidth << ", Height: " << mHeight;
+    return stream << "Width: " << mWidth << ", Height: " << mHeight;
 }
 
 std::ostream& operator<<(std::ostream& stream, const Rectangle& Rectangle) {

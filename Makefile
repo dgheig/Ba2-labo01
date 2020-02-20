@@ -16,7 +16,7 @@ OBJ = obj
 BUILDS = bin
 TESTS = tests
 
-all: labo01 compile_tests
+all: labo01 # compile_tests
 
 # cmake: CMakeLists.txt
 # 	mkdir cmake && cd cmake && cmake .. && make
@@ -26,7 +26,7 @@ HEADERS = $(SRC)/color.h $(SRC)/circle.h $(SRC)/square.h $(SRC)/triangle.h $(SRC
 
 main: labo01
 
-compile_tests: test_point_get test_point_set
+# compile_tests: test_point_get test_point_set
 
 clean: obj_dir
 	rm -f $(OBJ)/*
@@ -57,7 +57,7 @@ triangle.o: setup $(SRC)/triangle.h $(SRC)/triangle.cpp
 rectangle.o: setup $(SRC)/rectangle.h $(SRC)/rectangle.cpp
 	$(COMPILE) -c $(SRC)/rectangle.cpp -o $(OBJ)/rectangle.o
 
-labo1: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emmanuelle_gallay_david.cpp
+labo01: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emmanuelle_gallay_david.cpp
 	$(COMPILE) $(OBJECT) $(HEADERS) labo_01_comte_emmanuelle_gallay_david.cpp -o labo01
 
 # labo01: setup geometry.o labo01.o

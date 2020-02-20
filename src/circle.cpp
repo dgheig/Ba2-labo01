@@ -23,7 +23,7 @@ double Circle::getSurface() const {
     return M_PI * pow(mRadius, 2);
 }
 
-Color::Code getColor() const {
+Color::Code Circle::getColor() const {
     return mColor.getColor();
 }
 
