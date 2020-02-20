@@ -32,7 +32,7 @@ std::string Color::nom() const {
     }
 }
 
-std::ostream& Color::display(std::ostream& stream = std::cout) const {
+std::ostream& Color::display(std::ostream& stream) const {
     return stream << nom();
 }
 

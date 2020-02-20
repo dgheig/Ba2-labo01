@@ -8,4 +8,3 @@ bin/*
 lib*
 cmake/*
 .vscode
-Makefile
