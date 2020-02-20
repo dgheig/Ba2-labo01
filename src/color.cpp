@@ -9,8 +9,8 @@ Color::Code Color::getColor() const {
     return mCode;
 }
 
-void Color::setColor(Code code) const {
-
+void Color::setColor(Code code) {
+    mCode = code;
 }
 
 std::string Color::nom() const {
