@@ -21,6 +21,8 @@ all: labo01 compile_tests
 # cmake: CMakeLists.txt
 # 	mkdir cmake && cd cmake && cmake .. && make
 
+OBJECT =  $(OBJ)/color.o $(OBJ)/circle.o $(OBJ)/square.o $(OBJ)/triangle.o $(OBJ)/rectangle.o
+HEADERS = $(SRC)/color.h $(SRC)/circle.h $(SRC)/square.h $(SRC)/triangle.h $(SRC)/rectangle.h
 
 main: labo01
 
@@ -55,8 +57,8 @@ triangle.o: setup $(SRC)/triangle.h $(SRC)/triangle.cpp
 rectangle.o: setup $(SRC)/rectangle.h $(SRC)/rectangle.cpp
 	$(COMPILE) -c $(SRC)/rectangle.cpp -o $(OBJ)/rectangle.o
 
-labo01.o: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emmanuelle_gallay_david.cpp
-	$(COMPILE) color.o circle.o square.o triangle.o rectangle.o color.h circle.h square.h triangle.h rectangle.h labo_01_comte_emmanuelle_gallay_david.cpp -o labo01
+labo01: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emmanuelle_gallay_david.cpp
+	$(COMPILE) $(OBJECT) $(HEADERS) labo_01_comte_emmanuelle_gallay_david.cpp -o labo01
 
 # labo01: setup geometry.o labo01.o
 # 	$(COMPILE) $(SRC)/geometry.h $(OBJ)/geometry.o $(OBJ)/labo01.o -o $(BUILDS)/labo01

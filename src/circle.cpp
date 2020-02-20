@@ -16,13 +16,13 @@ double Circle::getRadius() const {
 }
 
 double Circle::getSurface() const {
-    return M_PI() * pow(mRadius, 2);
+    return M_PI * pow(mRadius, 2);
 }
 
 ostream& Circle::display(ostream& stream) const {
-    
+
 }
 
 ostream& operator<<(ostream& stream, const Circle& circle) {
-    return circle.display();
+    return circle.display(stream);
 }

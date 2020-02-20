@@ -1,7 +1,7 @@
 #include "triangle.h"
 
 
-Triangle::Triangle(double base, double height) {
+Triangle::Triangle(double base, double height): mBase(base), mHeight(height), mColor() {
 
 }
 
@@ -25,7 +25,7 @@ void Triangle::setBase(double base) {
 }
 
 std::ostream& Triangle::display(std::ostream& stream) const {
-    stream << "Base: " << mBase << ", Height: " << mHeight;
+    return stream << "Base: " << mBase << ", Height: " << mHeight;
 }
 
 std::ostream& operator<<(std::ostream& stream, const Triangle& triangle) {

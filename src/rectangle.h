@@ -19,9 +19,9 @@ class Rectangle {
 
 
     private:
-        Color mColor;
-        double mWidht;
+        double mWidth;
         double mHeight;
+        Color mColor;
 };
 
 

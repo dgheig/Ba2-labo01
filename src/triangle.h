@@ -19,9 +19,9 @@ class Triangle {
         std::ostream& display(std::ostream& stream = std::cout) const;
 
     private:
-        Color mColor;
         double mBase;
         double mHeight;
+        Color mColor;
 };
 
 std::ostream& operator<<(std::ostream& stream, const Triangle& triangle);

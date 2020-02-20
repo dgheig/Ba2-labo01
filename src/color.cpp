@@ -6,7 +6,7 @@ Color::Color(Code code): mCode(code) {
 }
 
 Color::Code Color::getColor() const {
-
+    return mCode;
 }
 
 void Color::setColor(Code code) const {
@@ -30,6 +30,7 @@ std::string Color::nom() const {
         default:
             return "unknown";
     }
+    return "unknown";
 }
 
 std::ostream& Color::display(std::ostream& stream) const {
