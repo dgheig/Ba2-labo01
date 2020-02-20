@@ -31,6 +31,7 @@ ostream& Circle::display(ostream& stream) const {
     stream << "Circle : " << endl
            << "Radius : " << mRadius << endl
            << "Color  : " << mColor  << endl;
+    return stream;
 }
 
 ostream& operator<<(ostream& stream, const Circle& circle) {
