@@ -2,6 +2,6 @@
 #define TRIANGLE_H
 
 
-#include "couleur.h"
+#include "color.h"
 
 #endif // TRIANGLE_H
