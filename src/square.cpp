@@ -3,7 +3,17 @@
 
 using namespace std;
 
-Square::Square(double side, const Color& color): mSide(side), mColor(color) {}
+Square::Square(double side, const Color& color): mSide(side), mColor(color) {
+
+}
+
+Square::Square(const Color& color): Square() {
+    setColor(color);
+}
+
+Square::Square(Color::Code code): Square(Color(code)) {
+
+}
 
 double Square::getSide() const {
     return mSide;

@@ -6,6 +6,9 @@
 class Square {
     public:
         Square(double side = 0, const Color& color = Color());
+        Square(const Color& color);
+        Square(Color::Code code);
+
 
         double getSide() const;
         double getSurface() const;

@@ -6,19 +6,20 @@
 
 class Color {
     public:
-        enum Code {
+        enum class Code {
             WHITE,
             BLUE,
             GREEN,
             RED,
             BLACK
         };
-        Color(Code code = WHITE);
+
+        Color(Code code = Code::WHITE);
 
         Code getColor() const;
         Color& setColor(Code code);
 
-        std::string nom() const;
+        std::string getName() const;
 
         std::ostream& display(std::ostream& stream = std::cout) const;
 
@@ -28,6 +29,8 @@ class Color {
 
 
 };
+
+std::string toString(const Color::Code& code);
 
 std::ostream& operator<<(std::ostream& stream, const Color& color);
 

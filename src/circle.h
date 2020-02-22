@@ -6,6 +6,9 @@
 class Circle {
     public:
         Circle(double radius = 0, const Color& color = Color());
+        Circle(const Color& color);
+        Circle(Color::Code code);
+
 
         Circle& setRadius(double radius);
         Circle& setColor(const Color& color);

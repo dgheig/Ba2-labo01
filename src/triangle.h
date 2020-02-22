@@ -8,6 +8,8 @@ class Triangle {
 
     public:
         Triangle(double base = 0, double height = 0, const Color& color = Color());
+        Triangle(const Color& color);
+        Triangle(Color::Code code);
 
         double getHeight() const;
         double getBase() const;

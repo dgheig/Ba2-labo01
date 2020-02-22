@@ -5,7 +5,17 @@
 using namespace std;
 
 
-Circle::Circle(double radius, const Color& color): mRadius(radius), mColor(color) {}
+Circle::Circle(double radius, const Color& color): mRadius(radius), mColor(color) {
+
+}
+
+Circle::Circle(const Color& color): Circle() {
+    setColor(color);
+}
+
+Circle::Circle(Color::Code code): Circle(Color(code)) {
+
+}
 
 Circle& Circle::setRadius(double radius) {
     mRadius = radius;

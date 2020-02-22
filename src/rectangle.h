@@ -7,6 +7,9 @@
 class Rectangle {
     public:
         Rectangle(double width = 0, double height = 0, const Color& color = Color());
+        Rectangle(const Color& color);
+        Rectangle(Color::Code code);
+
 
         double getHeight() const;
         double getWidth() const;

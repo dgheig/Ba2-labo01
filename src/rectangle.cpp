@@ -5,6 +5,14 @@ Rectangle::Rectangle(double width, double height, const Color& color): mWidth(wi
 
 }
 
+Rectangle::Rectangle(const Color& color): Rectangle() {
+    setColor(color);
+}
+
+Rectangle::Rectangle(Color::Code code): Rectangle(Color(code)) {
+
+}
+
 double Rectangle::getHeight() const {
     return mHeight;
 }
@@ -21,6 +29,7 @@ Rectangle& Rectangle::setHeight(double height) {
     mHeight = height;
     return *this;
 }
+
 Rectangle& Rectangle::setBase(double width) {
     mWidth = width;
     return *this;

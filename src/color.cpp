@@ -14,18 +14,22 @@ Color& Color::setColor(Code code) {
     return *this;
 }
 
-std::string Color::nom() const {
-    switch (mCode)
+std::string Color::getName() const {
+    return toString(mCode);
+}
+
+std::string toString(const Color::Code& code) {
+    switch (code)
     {
-        case WHITE:
+        case Color::Code::WHITE:
             return "white";
-        case BLUE:
+        case Color::Code::BLUE:
             return "blue";
-        case GREEN:
+        case Color::Code::GREEN:
             return "green";
-        case RED:
+        case Color::Code::RED:
             return "red";
-        case BLACK:
+        case Color::Code::BLACK:
             return "black";
 
         default:
@@ -35,7 +39,7 @@ std::string Color::nom() const {
 }
 
 std::ostream& Color::display(std::ostream& stream) const {
-    return stream << nom();
+    return stream << getName();
 }
 
 std::ostream& operator<<(std::ostream& stream, const Color& color) {

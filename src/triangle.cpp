@@ -5,6 +5,14 @@ Triangle::Triangle(double base, double height, const Color& color): mBase(base),
 
 }
 
+Triangle::Triangle(const Color& color): Triangle() {
+    setColor(color);
+}
+
+Triangle::Triangle(Color::Code code): Triangle(Color(code)) {
+
+}
+
 double Triangle::getHeight() const {
     return mHeight;
 }
