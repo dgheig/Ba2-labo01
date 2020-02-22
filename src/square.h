@@ -13,13 +13,13 @@ class Square {
 
         void setSide(double side);
         void setColor(Color::Code color);
-        
+
         std::ostream& display(std::ostream& stream = std::cout) const;
 
 
     private:
-        Color mColor;
         double mSide;
+        Color mColor;
 };
 
 
