@@ -16,7 +16,7 @@ class Color {
         Color(Code code = WHITE);
 
         Code getColor() const;
-        void setColor(Code code);
+        Color& setColor(Code code);
 
         std::string nom() const;
 

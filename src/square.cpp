@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Square::Square(double side, Color color) : mSide(side), mColor(color) {}
+Square::Square(double side, const Color& color): mSide(side), mColor(color) {}
 
 double Square::getSide() const {
     return mSide;
@@ -17,16 +17,23 @@ Color::Code Square::getColor() const {
     return mColor.getColor();
 }
 
-void Square::setSide(double side) {
-
+Square& Square::setSide(double side) {
+    mSide = side;
+    return *this;
 }
 
-void Square::setColor(Color::Code color) {
+Square& Square::setColor(const Color& color) {
+    mColor = color;
+    return *this;
+}
 
+Square& Square::setColor(Color::Code color) {
+    setColor(Color(color));
+    return *this;
 }
 
 ostream& Square::display(ostream& stream) const {
-    return stream;
+    return stream << "Width: " << mSide << ", Color: " << mColor;
 }
 
 ostream& operator<<(ostream& stream, const Square& square) {

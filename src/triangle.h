@@ -7,14 +7,16 @@
 class Triangle {
 
     public:
-        Triangle(double base = 0, double height = 0);
+        Triangle(double base = 0, double height = 0, const Color& color = Color());
 
         double getHeight() const;
         double getBase() const;
         double getSurface() const;
 
-        void setHeight(double height);
-        void setBase(double base);
+        Triangle& setHeight(double height);
+        Triangle& setBase(double base);
+        Triangle& setColor(const Color& color);
+        Triangle& setColor(Color::Code color);
 
         std::ostream& display(std::ostream& stream = std::cout) const;
 

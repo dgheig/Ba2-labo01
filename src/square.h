@@ -5,14 +5,15 @@
 
 class Square {
     public:
-        Square(double side = 0, Color color = Color());
+        Square(double side = 0, const Color& color = Color());
 
         double getSide() const;
         double getSurface() const;
         Color::Code getColor() const;
 
-        void setSide(double side);
-        void setColor(Color::Code color);
+        Square& setSide(double side);
+        Square& setColor(const Color& color);
+        Square& setColor(Color::Code color);
 
         std::ostream& display(std::ostream& stream = std::cout) const;
 

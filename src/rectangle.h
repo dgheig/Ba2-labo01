@@ -6,14 +6,17 @@
 
 class Rectangle {
     public:
-        Rectangle(double width = 0, double height = 0);
+        Rectangle(double width = 0, double height = 0, const Color& color = Color());
 
         double getHeight() const;
         double getWidth() const;
         double getSurface() const;
+        Color::Code getColor() const;
 
-        void setHeight(double height);
-        void setBase(double base);
+        Rectangle& setHeight(double height);
+        Rectangle& setBase(double base);
+        Rectangle& setColor(const Color& color);
+        Rectangle& setColor(Color::Code color);
 
         std::ostream& display(std::ostream& stream = std::cout) const;
 

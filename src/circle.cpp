@@ -5,14 +5,21 @@
 using namespace std;
 
 
-Circle::Circle(double radius, Color color) : mRadius(radius), mColor(color) {}
+Circle::Circle(double radius, const Color& color): mRadius(radius), mColor(color) {}
 
-void Circle::setRadius(double radius) {
+Circle& Circle::setRadius(double radius) {
     mRadius = radius;
+    return *this;
 }
 
-void Circle::setColor(Color::Code color) {
-    mColor.setColor(color);
+Circle& Circle::setColor(const Color& color) {
+    mColor = color;
+    return *this;
+}
+
+Circle& Circle::setColor(Color::Code color) {
+    setColor(Color(color));
+    return *this;
 }
 
 double Circle::getRadius() const {
@@ -29,8 +36,8 @@ Color::Code Circle::getColor() const {
 
 ostream& Circle::display(ostream& stream) const {
     return stream << "Circle : " << endl
-           << "Radius : " << mRadius << endl
-           << "Color  : " << mColor  << endl;
+                  << "Radius : " << mRadius << endl
+                  << "Color  : " << mColor  << endl;
 }
 
 ostream& operator<<(ostream& stream, const Circle& circle) {

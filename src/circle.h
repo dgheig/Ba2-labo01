@@ -5,17 +5,21 @@
 
 class Circle {
     public:
-        Circle(double radius = 0, Color color = Color());
-        void setRadius(double radius);
-        void setColor(Color::Code color);
+        Circle(double radius = 0, const Color& color = Color());
+
+        Circle& setRadius(double radius);
+        Circle& setColor(const Color& color);
+        Circle& setColor(Color::Code color);
+
         double getRadius() const;
         double getSurface() const;
         Color::Code getColor() const;
+
         std::ostream& display(std::ostream& stream = std::cout) const;
     private:
         double mRadius;
         Color mColor;
-    
+
 };
 
 std::ostream& operator<<(std::ostream& stream, const Circle& circle);

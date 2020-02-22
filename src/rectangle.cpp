@@ -1,7 +1,7 @@
 #include "rectangle.h"
 
 
-Rectangle::Rectangle(double width, double height): mWidth(width), mHeight(height), mColor() {
+Rectangle::Rectangle(double width, double height, const Color& color): mWidth(width), mHeight(height), mColor(color) {
 
 }
 
@@ -17,15 +17,29 @@ double Rectangle::getSurface() const {
     return mWidth * mHeight;
 }
 
-void Rectangle::setHeight(double height) {
+Rectangle& Rectangle::setHeight(double height) {
     mHeight = height;
+    return *this;
 }
-void Rectangle::setBase(double width) {
+Rectangle& Rectangle::setBase(double width) {
     mWidth = width;
+    return *this;
+}
+
+Rectangle& Rectangle::setColor(const Color& color) {
+    mColor = color;
+    return *this;
+}
+
+Rectangle& Rectangle::setColor(Color::Code color) {
+    setColor(Color(color));
+    return *this;
 }
 
 std::ostream& Rectangle::display(std::ostream& stream) const {
-    return stream << "Width: " << mWidth << ", Height: " << mHeight;
+    return stream << "Width: "    << mWidth
+                  << ", Height: " << mHeight
+                  << ", Color: "  << mColor;
 }
 
 std::ostream& operator<<(std::ostream& stream, const Rectangle& Rectangle) {

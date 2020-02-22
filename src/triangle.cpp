@@ -1,7 +1,7 @@
 #include "triangle.h"
 
 
-Triangle::Triangle(double base, double height): mBase(base), mHeight(height), mColor() {
+Triangle::Triangle(double base, double height, const Color& color): mBase(base), mHeight(height), mColor(color) {
 
 }
 
@@ -17,15 +17,30 @@ double Triangle::getSurface() const {
     return mBase * mHeight / 2.;
 }
 
-void Triangle::setHeight(double height) {
+Triangle& Triangle::setHeight(double height) {
     mHeight = height;
+    return *this;
 }
-void Triangle::setBase(double base) {
+
+Triangle& Triangle::setBase(double base) {
     mBase = base;
+    return *this;
+}
+
+Triangle& Triangle::setColor(const Color& color) {
+    mColor = color;
+    return *this;
+}
+
+Triangle& Triangle::setColor(Color::Code color) {
+    setColor(Color(color));
+    return *this;
 }
 
 std::ostream& Triangle::display(std::ostream& stream) const {
-    return stream << "Base: " << mBase << ", Height: " << mHeight;
+    return stream << "Base: "     << mBase
+                  << ", Height: " << mHeight
+                  << ", Color: "  << mColor;
 }
 
 std::ostream& operator<<(std::ostream& stream, const Triangle& triangle) {
