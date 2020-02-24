@@ -25,6 +25,10 @@ double Triangle::getSurface() const {
     return mBase * mHeight / 2.;
 }
 
+Color::Code Triangle::getColor() const {
+    return mColor.getColor();
+}
+
 Triangle& Triangle::setHeight(double height) {
     mHeight = height;
     return *this;
