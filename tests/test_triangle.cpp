@@ -38,7 +38,7 @@ int main() {
     if(triangle4.setHeight(5).getHeight() != 5)
         return EXIT_FAILURE;
 
-    if(circle5.setColor(c).getColor().getColorCode() != c.getColorCode())
+    if(triangle5.setColor(c).getColor().getColorCode() != c.getColorCode())
         return EXIT_FAILURE;
 
     return EXIT_SUCCESS;
