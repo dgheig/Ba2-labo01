@@ -1,4 +1,3 @@
-#include <iostream>
 #include "square.h"
 
 using namespace std;

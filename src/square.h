@@ -1,6 +1,7 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
+#include <iostream>
 #include "color.h"
 
 class Square {
@@ -9,7 +10,7 @@ class Square {
         /**
          * @brief Create a square with a side and a color, a side or with nothing
          * @param side  defalut value 0
-         * @param color defaulte value Color()
+         * @param color default value Color()
          */
         Square(double side = 0, const Color& color = Color());
         /**
