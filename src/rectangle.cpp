@@ -30,7 +30,7 @@ Rectangle& Rectangle::setHeight(double height) {
     return *this;
 }
 
-Rectangle& Rectangle::setBase(double width) {
+Rectangle& Rectangle::setWidth(double width) {
     mWidth = width;
     return *this;
 }
