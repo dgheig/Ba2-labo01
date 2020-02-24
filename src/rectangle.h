@@ -1,3 +1,18 @@
+/*
+-----------------------------------------------------------------------------------
+Laboratory  : labo_01
+File        : rectangle.h
+Author(s)   : Emmanuelle Comte et David Gallay
+Date        : 20.02.2020
+
+Purpose     : Declare class Rectangle and functions useful for it
+Remark(s)   :
+
+                There is the github repository:
+                https://github.com/dgheig/Ba2-labo01
+
+Compiler    : MinGW-g++ 6.3.0 and g++ 7.4.0
+-----------------------------------------------------------------------------------*/
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
