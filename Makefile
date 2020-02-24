@@ -28,7 +28,7 @@ HEADERS = -Isrc
 
 main: labo01
 
-compile_tests: test_circle test_rectangle
+compile_tests: test_circle test_rectangle test_square test_triangle
 
 clean: obj_dir
 	rm -f $(OBJ)/*
