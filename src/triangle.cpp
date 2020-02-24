@@ -46,9 +46,9 @@ Triangle& Triangle::setColor(Color::Code color) {
 }
 
 std::ostream& Triangle::display(std::ostream& stream) const {
-    return stream << "Base: "     << mBase
-                  << ", Height: " << mHeight
-                  << ", Color: "  << mColor;
+    return stream << "Triangle Base: " << mBase
+                  << ", Height: "      << mHeight
+                  << ", Color: "       << mColor;
 }
 
 std::ostream& operator<<(std::ostream& stream, const Triangle& triangle) {

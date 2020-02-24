@@ -46,9 +46,9 @@ Rectangle& Rectangle::setColor(Color::Code color) {
 }
 
 std::ostream& Rectangle::display(std::ostream& stream) const {
-    return stream << "Width: "    << mWidth
-                  << ", Height: " << mHeight
-                  << ", Color: "  << mColor;
+    return stream << "Rectangle Width: " << mWidth
+                  << ", Height: "        << mHeight
+                  << ", Color: "         << mColor;
 }
 
 std::ostream& operator<<(std::ostream& stream, const Rectangle& Rectangle) {

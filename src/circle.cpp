@@ -1,3 +1,5 @@
+#define _USE_MATH_DEFINES // M_PI
+
 #include <iostream>
 #include <cmath>
 #include "circle.h"
@@ -45,9 +47,8 @@ Color::Code Circle::getColor() const {
 }
 
 ostream& Circle::display(ostream& stream) const {
-    return stream << "Circle : " << endl
-                  << "Radius : " << mRadius << endl
-                  << "Color  : " << mColor  << endl;
+    return stream << "Circle Radius : " << mRadius 
+                  << ", Color  : "      << mColor  << endl;
 }
 
 ostream& operator<<(ostream& stream, const Circle& circle) {

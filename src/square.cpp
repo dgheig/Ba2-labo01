@@ -43,7 +43,7 @@ Square& Square::setColor(Color::Code color) {
 }
 
 ostream& Square::display(ostream& stream) const {
-    return stream << "Width: " << mSide << ", Color: " << mColor;
+    return stream << "Square Width: " << mSide << ", Color: " << mColor;
 }
 
 ostream& operator<<(ostream& stream, const Square& square) {
