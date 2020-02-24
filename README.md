@@ -1,4 +1,4 @@
-# labo01 - Matrice
+# labo01 - Classes
 
 ### Contributors
 * Comte Emmanuelle
