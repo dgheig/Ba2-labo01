@@ -14,7 +14,7 @@ jobs:
       run: make labo01
 
     - name: run labo01
-      run: ./labo01
+      run: ./labo01 <<< '\n'
 
 
   # cmake:
@@ -43,6 +43,12 @@ jobs:
 
     - name: test test_circle
       run: ./bin/test_circle
-      
+
+    - name: test test_rectangle
+      run: ./bin/test_rectangle
+
+    - name: test test_square
+      run: ./bin/test_square
+
     - name: test test_triangle
       run: ./bin/test_triangle

@@ -12,7 +12,7 @@ Compilateur :
 
 #include <iostream>
 #include "../src/color.h"
-#include "../src/circle.h"
+#include "../src/square.h"
 using namespace std;
 
 
@@ -20,22 +20,22 @@ int main() {
 
     Color c(Color::Code::GREEN);
 
-    Circle circle1;
-    Circle circle2(5);
-    Circle circle3(5, c);
-    Circle circle4(c);
-    Circle circle5(Color::Code::BLACK);
+    Square square1;
+    Square square2(5);
+    Square square3(5, c);
+    Square square4(c);
+    Square square5(Color::Code::BLACK);
 
-    cout << circle1 << endl;
-    cout << circle2 << endl;
-    cout << circle3 << endl;
-    cout << circle4 << endl;
-    cout << circle5 << endl;
+    cout << square1 << endl;
+    cout << square2 << endl;
+    cout << square3 << endl;
+    cout << square4 << endl;
+    cout << square5 << endl;
 
-    if(circle1.setRadius(9).getRadius() != 9)
+    if(square1.setSide(9).getSide() != 9)
         return EXIT_FAILURE;
 
-    if(circle5.setColor(c).getColor().getColorCode() != c.getColorCode())
+    if(square5.setColor(c).getColor().getColorCode() != c.getColorCode())
         return EXIT_FAILURE;
 
     return EXIT_SUCCESS;
