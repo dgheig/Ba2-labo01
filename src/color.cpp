@@ -1,5 +1,6 @@
 #include "color.h"
 
+using namespace std;
 
 Color::Color(Code code): mCode(code) {
 
@@ -14,11 +15,11 @@ Color& Color::setColor(Code code) {
     return *this;
 }
 
-std::string Color::getName() const {
+string Color::getName() const {
     return toString(mCode);
 }
 
-std::string toString(const Color::Code& code) {
+string toString(const Color::Code& code) {
     switch (code)
     {
         case Color::Code::WHITE:
@@ -38,11 +39,11 @@ std::string toString(const Color::Code& code) {
     return "unknown";
 }
 
-std::ostream& Color::display(std::ostream& stream) const {
+ostream& Color::display(ostream& stream) const {
     return stream << getName();
 }
 
-std::ostream& operator<<(std::ostream& stream, const Color& color) {
+ostream& operator<<(ostream& stream, const Color& color) {
     return color.display(stream);
 }
 

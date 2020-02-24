@@ -1,5 +1,6 @@
 #include "rectangle.h"
 
+using namespace std;
 
 Rectangle::Rectangle(double width, double height, const Color& color): mWidth(width), mHeight(height), mColor(color) {
 
@@ -45,12 +46,12 @@ Rectangle& Rectangle::setColor(Color::Code color) {
     return *this;
 }
 
-std::ostream& Rectangle::display(std::ostream& stream) const {
+ostream& Rectangle::display(ostream& stream) const {
     return stream << "Rectangle Width: " << mWidth
                   << ", Height: "        << mHeight
                   << ", Color: "         << mColor;
 }
 
-std::ostream& operator<<(std::ostream& stream, const Rectangle& Rectangle) {
+ostream& operator<<(ostream& stream, const Rectangle& Rectangle) {
     return Rectangle.display(stream);
 }
