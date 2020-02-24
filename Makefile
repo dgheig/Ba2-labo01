@@ -76,5 +76,8 @@ test_rectangle: $(TESTS)/test_rectangle.cpp color.o rectangle.o
 test_square: $(TESTS)/test_square.cpp color.o square.o
 	$(COMPILE) $(SRC)/color.h $(SRC)/square.h $(OBJ)/color.o $(OBJ)/square.o $(TESTS)/test_square.cpp -o $(BUILDS)/test_square
 
+test_triangle: $(TESTS)/test_triangle.cpp color.o triangle.o
+	$(COMPILE) $(SRC)/color.h $(SRC)/triangle.h $(OBJ)/color.o $(OBJ)/triangle.o $(TESTS)/test_triangle.cpp -o $(BUILDS)/test_triangle
+
 # test_point_set: $(TESTS)/test_point_set.cpp geometry.o
 # 	$(COMPILE) src/geometry.h $(OBJ)/geometry.o $(TESTS)/test_point_set.cpp -o $(BUILDS)/test_point_set

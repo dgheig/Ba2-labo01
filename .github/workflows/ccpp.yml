@@ -49,3 +49,6 @@ jobs:
 
     - name: test test_square
       run: ./bin/test_square
+
+    - name: test test_triangle
+      run: ./bin/test_triangle
