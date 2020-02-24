@@ -11,8 +11,7 @@ Compilateur :
 -----------------------------------------------------------------------------------*/
 
 #include <iostream>
-#include "../src/geometry.h"
-#include "test_utility.h"
+
 using namespace std;
 
 int exit_value = EXIT_SUCCESS;
@@ -20,7 +19,7 @@ int exit_value = EXIT_SUCCESS;
 
 // bool model(. . ., bool expected) {
 
-//     if (is_leap_year(year) != expected) {
+//     if (to_test(year) != expected) {
 //         cerr << "message" << endl;
 //         int exit_value = EXIT_FAILURE;
 //     }

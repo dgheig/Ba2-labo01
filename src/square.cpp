@@ -1,3 +1,15 @@
+/*
+-----------------------------------------------------------------------------------
+Laboratoire : labo_01
+Fichier     : square.cpp
+Auteur(s)   : Emmanuelle Comte et David Gallay
+Date        : 24.02.2020
+
+But         : Function définition for header square.h
+Remarque(s) :
+Compilateur : MinGW-g++ 6.3.0 and g++ 7.4.0
+-----------------------------------------------------------------------------------*/
+
 #include "square.h"
 
 using namespace std;
