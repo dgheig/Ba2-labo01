@@ -70,5 +70,8 @@ labo01: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emm
 test_circle: $(TESTS)/test_circle.cpp color.o circle.o
 	$(COMPILE) $(SRC)/color.h $(SRC)/circle.h $(OBJ)/color.o $(OBJ)/circle.o $(TESTS)/test_circle.cpp -o $(BUILDS)/test_circle
 
+test_triangle: $(TESTS)/test_triangle.cpp color.o triangle.o
+	$(COMPILE) $(SRC)/color.h $(SRC)/triangle.h $(OBJ)/color.o $(OBJ)/triangle.o $(TESTS)/test_triangle.cpp -o $(BUILDS)/test_triangle
+
 # test_point_set: $(TESTS)/test_point_set.cpp geometry.o
 # 	$(COMPILE) src/geometry.h $(OBJ)/geometry.o $(TESTS)/test_point_set.cpp -o $(BUILDS)/test_point_set

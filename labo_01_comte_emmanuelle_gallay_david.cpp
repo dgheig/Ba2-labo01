@@ -5,8 +5,8 @@ File        : labo_01_comte_emmanuelle_gallay_david.cpp
 Author(s)   : Emmanuelle Comte et David Gallay
 Date        : 20.02.2020
 
-Purpose     :
-Remark(s)   :
+Purpose     : Prove the good working of classes defined in others files.
+Remark(s)   : 
 
                 There is the github repository:
                 https://github.com/dgheig/labo01

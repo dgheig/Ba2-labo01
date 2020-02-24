@@ -43,3 +43,6 @@ jobs:
 
     - name: test test_circle
       run: ./bin/test_circle
+      
+    - name: test test_triangle
+      run: ./bin/test_triangle
