@@ -43,3 +43,9 @@ jobs:
 
     - name: test test_circle
       run: ./bin/test_circle
+
+    - name: test test_rectangle
+      run: ./bin/test_rectangle
+
+    - name: test test_square
+      run: ./bin/test_square
