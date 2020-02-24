@@ -16,7 +16,7 @@ OBJ = obj
 BUILDS = bin
 TESTS = tests
 
-all: labo01 # compile_tests
+all: labo01 compile_tests
 
 # cmake: CMakeLists.txt
 # 	mkdir cmake && cd cmake && cmake .. && make
@@ -28,7 +28,7 @@ HEADERS = -Isrc
 
 main: labo01
 
-# compile_tests: test_point_get test_point_set
+compile_tests: test_circle
 
 clean: obj_dir
 	rm -f $(OBJ)/*
@@ -67,8 +67,8 @@ labo01: setup color.o circle.o square.o triangle.o rectangle.o labo_01_comte_emm
 
 # # TESTS
 
-# test_point_get: $(TESTS)/test_point_get.cpp geometry.o
-# 	$(COMPILE) src/geometry.h $(OBJ)/geometry.o $(TESTS)/test_point_get.cpp -o $(BUILDS)/test_point_get
+test_circle: $(TESTS)/test_circle.cpp color.o circle.o
+	$(COMPILE) $(SRC)/color.h $(SRC)/circle.h $(OBJ)/color.o $(OBJ)/circle.o $(TESTS)/test_circle.cpp -o $(BUILDS)/test_circle
 
 # test_point_set: $(TESTS)/test_point_set.cpp geometry.o
 # 	$(COMPILE) src/geometry.h $(OBJ)/geometry.o $(TESTS)/test_point_set.cpp -o $(BUILDS)/test_point_set

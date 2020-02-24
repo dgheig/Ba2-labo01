@@ -6,7 +6,7 @@ Color::Color(Code code): mCode(code) {
 
 }
 
-Color::Code Color::getColor() const {
+Color::Code Color::getColorCode() const {
     return mCode;
 }
 
@@ -46,5 +46,3 @@ ostream& Color::display(ostream& stream) const {
 ostream& operator<<(ostream& stream, const Color& color) {
     return color.display(stream);
 }
-
-

@@ -3,7 +3,7 @@
 Laboratoire : labo_01
 Fichier     : model.cpp
 Auteur(s)   : Emmanuelle Comte et David Gallay
-Date        : 11.01.2020
+Date        : 24.02.2020
 
 But         : Example of test file for a function
 Remarque(s) :

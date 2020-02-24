@@ -26,6 +26,10 @@ double Rectangle::getSurface() const {
     return mWidth * mHeight;
 }
 
+Color Rectangle::getColor() const {
+    return mColor;
+}
+
 Rectangle& Rectangle::setHeight(double height) {
     mHeight = height;
     return *this;

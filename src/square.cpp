@@ -22,8 +22,8 @@ double Square::getSurface() const {
     return mSide * mSide;
 }
 
-Color::Code Square::getColor() const {
-    return mColor.getColor();
+Color Square::getColor() const {
+    return mColor;
 }
 
 Square& Square::setSide(double side) {

@@ -41,12 +41,12 @@ double Circle::getSurface() const {
     return M_PI * pow(mRadius, 2);
 }
 
-Color::Code Circle::getColor() const {
-    return mColor.getColor();
+Color Circle::getColor() const {
+    return mColor;
 }
 
 ostream& Circle::display(ostream& stream) const {
-    return stream << "Circle Radius : " << mRadius 
+    return stream << "Circle Radius : " << mRadius
                   << ", Color  : "      << mColor  << endl;
 }
 

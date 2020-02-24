@@ -43,7 +43,7 @@ class Square {
          * @brief  Get the color of the square
          * @return The color of the square
          */
-        Color::Code getColor() const;
+        Color getColor() const;
 
         /**
          * @brief  Change the side of the square

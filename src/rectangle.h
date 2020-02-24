@@ -50,7 +50,7 @@ class Rectangle {
          * @brief  Get the color of the rectangle
          * @return The color of the rectangle
          */
-        Color::Code getColor() const;
+        Color getColor() const;
 
         /**
          * @brief  Change the height of the rectangle

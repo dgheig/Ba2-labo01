@@ -63,7 +63,7 @@ class Circle {
          * @brief  Get the color of the circle
          * @return The color of the circle
          */
-        Color::Code getColor() const;
+        Color getColor() const;
 
         /**
          * @brief  Display a circle

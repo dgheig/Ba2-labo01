@@ -3,18 +3,18 @@ name: C/C++ CI
 on: [push]
 
 jobs:
-  # build:
+  build:
 
-  #   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #   - uses: actions/checkout@master
+    steps:
+    - uses: actions/checkout@master
 
-  #   - name: compile labo01
-  #     run: make labo01
+    - name: compile labo01
+      run: make labo01
 
-  #   - name: run labo01
-  #     run: ./bin/labo01  < tests/inputs/inputs1.txt
+    - name: run labo01
+      run: .labo01
 
 
   # cmake:
@@ -31,18 +31,15 @@ jobs:
   #   - name: run labo01 with inputs2
   #     run: ./bin/labo01 < tests/inputs/inputs2.txt
 
-  # tests:
+  tests:
 
-  #   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #   - uses: actions/checkout@master
+    steps:
+    - uses: actions/checkout@master
 
-  #   - name: compile tests
-  #     run: make compile_tests
+    - name: compile tests
+      run: make compile_tests
 
-  #   - name: test test_point_get
-  #     run: ./bin/test_point_get
-
-  #   - name: test test_point_set
-  #     run: ./bin/test_point_set
+    - name: test test_circle
+      run: ./bin/test_circle

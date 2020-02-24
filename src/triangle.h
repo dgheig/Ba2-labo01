@@ -51,7 +51,7 @@ class Triangle {
          * @brief  Get the color of the triangle
          * @return The color of the triangle
          */
-        Color::Code getColor() const;
+        Color getColor() const;
 
         /**
          * @breif  Change the height of the triangle

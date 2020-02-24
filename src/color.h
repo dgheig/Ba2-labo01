@@ -25,7 +25,7 @@ class Color {
          * @brief  Get the color
          * @return The code of the color (enum)
          */
-        Code getColor() const;
+        Code getColorCode() const;
 
         /**
          * @brief  Change the color
