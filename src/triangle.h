@@ -7,19 +7,22 @@
 class Triangle {
 
     public:
+
         /**
-         * @breif Create a triangle with a base, a height and a color, a base and 
+         * @breif Create a triangle with a base, a height and a color, a base and
          *        a height, a base or with nothing
          * @param base   defalut value 0
          * @param height default value 0
          * @param color  default value Color()
          */
         Triangle(double base = 0, double height = 0, const Color& color = Color());
+
         /**
          * @breif Create a triangle with an object color
          * @param color
          */
         Triangle(const Color& color);
+
         /**
          * @breif Create a triangle with a color code (enum)
          * @param code
@@ -31,16 +34,19 @@ class Triangle {
          * @return The height of the triangle
          */
         double getHeight() const;
+
         /**
-         * @breif  Get the base of the triangle 
+         * @breif  Get the base of the triangle
          * @return The base of the triangle
          */
         double getBase() const;
+
         /**
          * @breif  Calculat the surface of the triangle
          * @return The surface of the triangle
          */
         double getSurface() const;
+
         /**
          * @brief  Get the color of the triangle
          * @return The color of the triangle
@@ -53,12 +59,14 @@ class Triangle {
          * @return The triangle
          */
         Triangle& setHeight(double height);
+
         /**
          * @breif  Change the base of the triangle
          * @param  base
          * @return The triangle
          */
         Triangle& setBase(double base);
+
         /**
          * @breif  Change the color of the triangle with an object color
          * @param  color

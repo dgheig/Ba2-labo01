@@ -6,17 +6,20 @@
 class Square {
 
     public:
+
         /**
          * @brief Create a square with a side and a color, a side or with nothing
          * @param side  defalut value 0
          * @param color defaulte value Color()
          */
         Square(double side = 0, const Color& color = Color());
+
         /**
-         * @brief Create a square with an object color 
+         * @brief Create a square with an object color
          * @param color
          */
         Square(const Color& color);
+
         /**
          * @brief Create a square with a color code (enum)
          * @param code
@@ -28,11 +31,13 @@ class Square {
          * @return The side of the square
          */
         double getSide() const;
+
         /**
          * @brief  Calculate the surface of the square
          * @return The surface of the square
          */
         double getSurface() const;
+
         /**
          * @brief  Get the color of the square
          * @return The color of the square
@@ -45,12 +50,14 @@ class Square {
          * @return The square
          */
         Square& setSide(double side);
+
         /**
          * @brief  Change the color of the square with an object color
          * @param  color
          * @return The square
          */
         Square& setColor(const Color& color);
+
         /**
          * @brief  Change the color of the square with a color code (enum)
          * @param  color

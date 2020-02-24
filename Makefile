@@ -21,8 +21,10 @@ all: labo01 # compile_tests
 # cmake: CMakeLists.txt
 # 	mkdir cmake && cd cmake && cmake .. && make
 
-OBJECT =  $(OBJ)/color.o $(OBJ)/circle.o $(OBJ)/square.o $(OBJ)/triangle.o $(OBJ)/rectangle.o
-HEADERS = $(SRC)/color.h $(SRC)/circle.h $(SRC)/square.h $(SRC)/triangle.h $(SRC)/rectangle.h
+# OBJECT =  $(OBJ)/color.o $(OBJ)/circle.o $(OBJ)/square.o $(OBJ)/triangle.o $(OBJ)/rectangle.o
+# HEADERS = $(SRC)/color.h $(SRC)/circle.h $(SRC)/square.h $(SRC)/triangle.h $(SRC)/rectangle.h
+OBJECT = -Lobj
+HEADERS = -Isrc
 
 main: labo01
 

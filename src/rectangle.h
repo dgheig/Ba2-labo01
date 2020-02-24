@@ -15,11 +15,13 @@ class Rectangle {
          * @param color  default value Color()
          */
         Rectangle(double width = 0, double height = 0, const Color& color = Color());
+
         /**
          * @brief Create a rectangle with an object color
          * @param color
          */
         Rectangle(const Color& color);
+
         /**
          * @brief Create a rectangle with a color code (enum)
          * @param code
@@ -31,16 +33,19 @@ class Rectangle {
          * @return The height of the rectangle
          */
         double getHeight() const;
+
         /**
-         * @brief  Get the width of the rectangle 
+         * @brief  Get the width of the rectangle
          * @return The width of the rectangle
          */
         double getWidth() const;
+
         /**
          * @brief  Calculate the surface of the rectangle
          * @return The surface f the rectangle
          */
         double getSurface() const;
+
         /**
          * @brief  Get the color of the rectangle
          * @return The color of the rectangle
@@ -53,18 +58,21 @@ class Rectangle {
          * @return The rectangle
          */
         Rectangle& setHeight(double height);
+
         /**
          * @brief  Change the width of the rectangle
          * @param  base
          * @return The rectangle
          */
         Rectangle& setWidth(double width);
+
         /**
          * @brief  Change the color of the rectangle with an object color
          * @param  color
          * @return The rectangle
          */
         Rectangle& setColor(const Color& color);
+
         /**
          * @brief  Change the color of the rectangle with a color code (enum)
          * @param  color

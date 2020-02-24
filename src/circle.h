@@ -12,11 +12,13 @@ class Circle {
          * @param color  default value Color()
          */
         Circle(double radius = 0, const Color& color = Color());
+
         /**
          * @brief Create a circle with an object color
          * @param color
          */
         Circle(const Color& color);
+
         /**
          * @brief Create a circle with a color by a color code (enum)
          * @param code
@@ -29,15 +31,17 @@ class Circle {
          * @return The circle
          */
         Circle& setRadius(double radius);
+
         /**
          * @brief  Change the color of the circle with an object color
          * @param  color
          * @return The circle
          */
         Circle& setColor(const Color& color);
+
         /**
          * @brief  Change the color of the circle with a color code (enum)
-         * @param  color 
+         * @param  color
          * @return The circle
          */
         Circle& setColor(Color::Code color);
@@ -47,11 +51,13 @@ class Circle {
          * @return The radius of the circle
          */
         double getRadius() const;
+
         /**
          * @brief  Calculate the surface of the circle
          * @return The surface of the circle
          */
         double getSurface() const;
+
         /**
          * @brief  Get the color of the circle
          * @return The color of the circle
@@ -73,8 +79,8 @@ class Circle {
 
 /**
  * @brief  Overload of the output stream to display a circle
- * @param  stream 
- * @param  circle 
+ * @param  stream
+ * @param  circle
  * @return The stream
  */
 std::ostream& operator<<(std::ostream& stream, const Circle& circle);

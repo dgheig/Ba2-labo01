@@ -26,6 +26,7 @@ class Color {
          * @return The code of the color (enum)
          */
         Code getColor() const;
+
         /**
          * @brief  Change the color
          * @param  code
@@ -35,7 +36,7 @@ class Color {
 
         /**
          * @brief  Get the name of the color
-         * @return The name of the color 
+         * @return The name of the color
          */
         std::string getName() const;
 
