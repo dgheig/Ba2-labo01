@@ -1,13 +1,13 @@
 /*
 -----------------------------------------------------------------------------------
 Laboratoire : labo_01
-Fichier     : model.cpp
+Fichier     : test_circle.cpp
 Auteur(s)   : Emmanuelle Comte et David Gallay
 Date        : 24.02.2020
 
 But         : Test features of class Circle
 Remarque(s) :
-Compilateur :
+Compilateur : MinGW-g++ 6.3.0 and g++ 7.4.0
 -----------------------------------------------------------------------------------*/
 
 #include <iostream>

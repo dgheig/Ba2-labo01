@@ -6,10 +6,10 @@ Author(s)   : Emmanuelle Comte et David Gallay
 Date        : 20.02.2020
 
 Purpose     : Prove the good working of classes defined in others files.
-Remark(s)   : 
+Remark(s)   :
 
                 There is the github repository:
-                https://github.com/dgheig/labo01
+                https://github.com/dgheig/Ba2-labo01
 
 Compiler    : MinGW-g++ 6.3.0 and g++ 7.4.0
 -----------------------------------------------------------------------------------*/

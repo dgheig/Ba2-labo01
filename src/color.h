@@ -50,8 +50,6 @@ class Color {
     private:
         Code mCode;
 
-
-
 };
 
 /**

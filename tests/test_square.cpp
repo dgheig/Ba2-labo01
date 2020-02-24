@@ -1,13 +1,13 @@
 /*
 -----------------------------------------------------------------------------------
 Laboratoire : labo_01
-Fichier     : model.cpp
+Fichier     : test_square.cpp
 Auteur(s)   : Emmanuelle Comte et David Gallay
 Date        : 24.02.2020
 
-But         : Test features of class Circle
+But         : Test features of class Square
 Remarque(s) :
-Compilateur :
+Compilateur : MinGW-g++ 6.3.0 and g++ 7.4.0
 -----------------------------------------------------------------------------------*/
 
 #include <iostream>
