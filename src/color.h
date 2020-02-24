@@ -67,6 +67,4 @@ std::string toString(const Color::Code& code);
  */
 std::ostream& operator<<(std::ostream& stream, const Color& color);
 
-
-
 #endif // COLOR_H
