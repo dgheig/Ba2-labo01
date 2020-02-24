@@ -5,7 +5,7 @@ Fichier     : color.cpp
 Auteur(s)   : Emmanuelle Comte et David Gallay
 Date        : 24.02.2020
 
-But         : Function définition for header color.h
+But         : Function definition for header color.h
 Remarque(s) :
 Compilateur : MinGW-g++ 6.3.0 and g++ 7.4.0
 -----------------------------------------------------------------------------------*/
